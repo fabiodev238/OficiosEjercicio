@@ -4,14 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/rvJobs"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       tools:listitem="@layout/item_oficios">
+    <LinearLayout
+        android:id="@+id/tvLinear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
 
-   </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/etText1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/stylo_bordes"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="18dp"
+
+            app:fontFamily="sans-serif">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/etText2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/stylo_bordes"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="18dp"
+            app:fontFamily="sans-serif">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/etText3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/stylo_bordes"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="18dp"
+            app:fontFamily="sans-serif">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvJobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="46dp"
+        tools:listitem="@layout/item_oficios">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>

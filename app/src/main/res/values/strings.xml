@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">OficiosEjercicio</string>
+    <string name="oficios">Presupuestos</string>
+    <string name="oficios1">Disponibilidades</string>
+    <string name="oficios2">Promociones</string>
+
 </resources>

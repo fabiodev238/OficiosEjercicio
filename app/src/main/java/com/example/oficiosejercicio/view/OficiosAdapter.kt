@@ -1,13 +1,12 @@
-package com.example.oficiosejercicio
+package com.example.oficiosejercicio.view
 
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.inflate
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.resources.Compatibility.Api21Impl.inflate
-import androidx.core.graphics.drawable.DrawableCompat.inflate
 import androidx.recyclerview.widget.RecyclerView
+import com.example.oficiosejercicio.R
+import com.example.oficiosejercicio.model.DataJobs
 
 
 class OficiosAdapter(val dataJobs: List<DataJobs>) : RecyclerView.Adapter<OficiosAdapter.JobsHolder>() {
@@ -28,11 +27,11 @@ class OficiosAdapter(val dataJobs: List<DataJobs>) : RecyclerView.Adapter<Oficio
     class JobsHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
         private val tvTrabajos = view.findViewById<TextView>(R.id.tvTrabajos)
-        private val tvJornada = view.findViewById<TextView>(R.id.tvJornada)
+
 
         fun render(dataJobs: DataJobs) {
-            tvJornada.text = dataJobs.jornada
             tvTrabajos.text = dataJobs.oficio
+            tvTrabajos.textSize
 
         }
     }
