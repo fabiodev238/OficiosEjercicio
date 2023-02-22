@@ -9,7 +9,8 @@ import com.example.oficiosejercicio.R
 import com.example.oficiosejercicio.model.DataJobs
 
 
-class OficiosAdapter(val dataJobs: List<DataJobs>) : RecyclerView.Adapter<OficiosAdapter.JobsHolder>() {
+class OficiosAdapter(val dataJobs: List<DataJobs>) :
+    RecyclerView.Adapter<OficiosAdapter.JobsHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JobsHolder {

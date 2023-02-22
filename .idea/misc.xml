@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/drawable-v24/stylo_bordes2.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/stylo_bordes.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/item_oficios.xml" value="0.260595703125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_category.xml" value="0.20089285714285715" />
+        <entry key="app/src/main/res/layout/item_oficios.xml" value="0.10320284697508897" />
       </map>
     </option>
   </component>

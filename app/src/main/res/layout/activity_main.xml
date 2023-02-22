@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,11 +9,13 @@
     tools:context=".view.MainActivity">
 
     <LinearLayout
-        android:id="@+id/tvLinear"
+
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:orientation="horizontal"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/etText1"
@@ -23,7 +26,6 @@
             android:gravity="center"
             android:textStyle="bold"
             app:autoSizeMaxTextSize="18dp"
-
             app:fontFamily="sans-serif">
 
         </TextView>
@@ -37,7 +39,9 @@
             android:gravity="center"
             android:textStyle="bold"
             app:autoSizeMaxTextSize="18dp"
-            app:fontFamily="sans-serif">
+            app:fontFamily="sans-serif"
+            app:layout_constraintBottom_toBottomOf="@+id/rvJobs2"
+            >
 
         </TextView>
 
@@ -56,14 +60,53 @@
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvJobs"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="46dp"
-        tools:listitem="@layout/item_oficios">
+        android:layout_height="409dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-    </androidx.recyclerview.widget.RecyclerView>
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvJobs2"
+            android:layout_width="match_parent"
+            android:layout_height="409dp"
+            android:paddingTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/etText2"
+            tools:listitem="@layout/item_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/rvJobs"
+            >
 
-</FrameLayout>
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvJobs"
+            android:layout_width="match_parent"
+            android:layout_height="363dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            tools:listitem="@layout/item_oficios"
+            app:layout_constraintTop_toBottomOf="@+id/rvJobs2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,13 +2,28 @@ package com.example.oficiosejercicio.data
 
 import android.view.View
 import android.widget.EditText
+import android.widget.ListView
 import android.widget.TextView
 import com.example.oficiosejercicio.R
+import com.example.oficiosejercicio.model.DataCategory
 import com.example.oficiosejercicio.model.DataJobs
 import com.example.oficiosejercicio.view.MainActivity
+import java.util.*
 
 
 class Repository {
+
+
+    fun lista(): List<String> {
+
+        val list: List<String> = listOf(
+            "Contactenos",
+            "Presupuestas",
+            "Promociones"
+        )
+
+        return list
+    }
 
     fun listado(): List<DataJobs> {
         val jobs: List<DataJobs> = listOf(
@@ -42,17 +57,30 @@ class Repository {
 
     }
 
-    /*
-   fun iniText(view: View) {
-        val etText1A: TextView = view.findViewById<TextView>(R.id.etText1)
-        val etText2A = view.findViewById<TextView>(R.id.etText2)
-        val etText3A = view.findViewById<TextView>(R.id.etText3)
+    fun categoryJobs(): List<DataCategory> {
 
-        etText1A.text = "Presupuestosjjj"
-        etText2A.text = "Promocioness"
-        etText3A.text = "Novedadesf"
+        val jobsCategory: List<DataCategory> = listOf(
+
+
+            DataCategory("Salud",true),
+            DataCategory("Estetica",false),
+            DataCategory("Maestranza",false),
+            DataCategory("Cultura",true),
+            DataCategory("Administración",false),
+            DataCategory("Herreria",false),
+            DataCategory("Automotor",true),
+            DataCategory("Motos",false),
+            DataCategory("Construccion",true),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false),
+            DataCategory("Belleza",false)
+        )
+        return jobsCategory
 
     }
-    */
-
 }
