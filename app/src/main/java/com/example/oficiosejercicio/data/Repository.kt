@@ -18,7 +18,7 @@ class Repository {
 
         val list: List<String> = listOf(
             "Contactenos",
-            "Presupuestas",
+            "Presupuestos",
             "Promociones"
         )
 
@@ -29,24 +29,24 @@ class Repository {
         val jobs: List<DataJobs> = listOf(
             DataJobs("Cerrajero"),
             DataJobs("Carnicero"),
-            DataJobs("Cervecero"),
+            DataJobs("Manicura"),
             DataJobs("Remisero"),
             DataJobs("Plomero"),
             DataJobs("Gasista"),
             DataJobs("Cerrajero"),
             DataJobs("Carnicero"),
-            DataJobs("Cervecero"),
+            DataJobs("Manicura"),
             DataJobs("Remisero"),
             DataJobs("Plomero"),
             DataJobs("Gasista"),
             DataJobs("Cerrajero"),
             DataJobs("Carnicero"),
-            DataJobs("Cervecero"),
+            DataJobs("Manicura"),
             DataJobs("Remisero"),
             DataJobs("Plomero"),
             DataJobs("Gasista"),
             DataJobs("Cerrajero"),
-            DataJobs("Carnicero"),
+            DataJobs("Manicura"),
             DataJobs("Cervecero"),
             DataJobs("Remisero"),
             DataJobs("Plomero"),

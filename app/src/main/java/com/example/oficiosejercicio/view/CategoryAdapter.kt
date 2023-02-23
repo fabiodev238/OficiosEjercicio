@@ -40,7 +40,7 @@ class CategoryAdapter(val categoryList: List<DataCategory>) :
             val buscado = category.masBuscado
 
             if (buscado) {
-                tvCategory1.text =" Lo más buscado de hoy -->  " + category.category
+                tvCategory1.text ="Categoria más buscada hoy -->  " + category.category
 
 
 
